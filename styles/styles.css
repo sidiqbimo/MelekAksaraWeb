@@ -1,0 +1,465 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+/* Font Awesome : Logo socmed */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Rubik&family=Wix+Madefor+Display:wght@500&display=swap');
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Wix Madefor Display',    'Quicksand',sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    background-color:#F9ED69;
+    margin-top:1rem;
+    border: 2px solid #B83B5E;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 2px 8px 10px 10px #fffeb4;
+}
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .ikonLogo img{
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+.heyNav{
+    /* Highlight "Daftar Kelas" */
+    background-color: #F08A5D;
+    color: #fffeb4 !important;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #6A2C70;
+    color: white;
+
+    font-size: 140%;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px;
+    flex: 1;
+    gap: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+main .sliderWithJS{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    /* overflow: hidden; */
+}
+
+main .sliderWithJS img{
+    margin: auto; 
+
+    width: 80%;
+    height: 30rem;
+   
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+main .sliderWithJS img.active{
+    opacity: 1;
+}
+
+.spacingTopper{
+    margin-top: 35rem;
+}
+
+main .info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+main .info2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+main .info .info-description{
+    flex:1 1;
+}
+
+main .info .info-description .title{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+    color:#6A2C70;
+    transition: all .35s ease-in;
+}
+
+main .info .info-description .popH2{
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    color:#B83B5E;
+}
+
+main .info .info-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+   
+main .info .info-description button {
+    padding: .4rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #B83B5E;
+    cursor:pointer;
+    transition: all .35s ease-in;
+}
+   
+main .info .info-description button:hover {
+    border: 3px solid #B83B5E;
+    color: #B83B5E;
+    background-color: transparent;
+    font-size: large;
+}
+
+/* Making image in description to be in the center */
+/* for the div that has img as child : */
+main .info .info-image {
+    flex: 1;
+    display: flex;
+}
+
+/* The img/child */
+main .info .info-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 400px;
+}
+
+/* Content */
+/* Highlight Panel */
+#highlightPromo{
+    display: flex;
+    
+}
+
+main .highlight .info-description {
+    background-color: #F9ED69;
+    padding: 4rem;
+    border-radius: 25px;
+    margin: 5rem;
+    text-align: center;
+}
+
+main .info .emailForm{
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    gap: 1rem;    
+}
+
+main .info .emailForm input{
+    flex: 1;
+    background-color: #ffffff;
+    border: transparent;
+
+    padding: 1rem 1rem;
+    
+    border-radius: 20px;
+    height: 2%;
+    width: auto;
+}
+
+main .info .info-description .emailForm button {
+    flex:0.2;
+   
+    color: #B83B5E;
+    padding: 1rem 1rem;
+    border: 3px solid #F08A5D;
+    border-radius: 999px;
+    background-color: transparent;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+main .info .emailForm button:hover{
+    border: transparent;
+
+    transition: all 0.5s ease-in-out;
+    background-color: #F08A5D;
+    color: antiquewhite;
+}
+
+.footerBeranda{
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: #F9ED69;
+
+    line-height: 0.4em;
+    font-size: smaller;
+}
+
+.footerBeranda .backTop{
+    text-decoration: none;
+    color: black;
+    line-height: 2rem;
+
+    border:2px solid black;
+    padding: 0.2rem 2rem;
+    border-radius: 2rem;
+}
+
+.footerBeranda .backTop:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.titlePromo{
+    color: white;
+    font-size: 2rem;
+}
+
+/* Social media navigation */
+main aside {
+    display: flex;
+    position: fixed;
+    /* Inset = shorthand for  top, right, bottom, dan left when applying 'position' property
+    --- Block : top and bottom
+    --- Inline : left and right */
+    inset-block: fit-content;
+    max-width: 10rem;
+    inset-inline-end: 0;
+    line-height: 1rem;
+
+    padding: 1.5rem 1rem;
+    margin: auto;
+    margin-right: 2rem;
+    border-radius: 12px;
+    background-color: #F08A5D;
+    color: #ffffff;
+    box-shadow:2px 2px 9px black;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+   
+main aside .promoGo img{
+    width: 8rem;
+}
+
+/* Changing icons color to white */
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+
+/* STANDALONE CLASS */
+.titleBar{
+    text-align: center;
+    color: #6A2C70;
+    font-size: 3rem;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (min-width:773px) and (max-width:1360px) {
+    .footerBeranda{
+        line-height: 1rem;
+    }
+
+    main aside {
+        position:relative;
+        max-width: fit-content;
+        line-height: 1rem;
+        text-align: center;
+
+        margin-top: 2rem;
+
+        border-radius: 12px;
+        background-color: #F08A5D;
+        color: #ffffff;
+        box-shadow:2px 2px 9px black;
+       
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main aside .promoGo img{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 772px){
+    header.navbar-container{
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    header.navbar-container .nav-list ul li a {
+        color:#6d2c11;
+        font-weight: bolder;
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    header.navbar-container .nav-list ul li a:hover {
+        font-size: 100%;
+    }
+
+    main{
+        /* padding: topbottom leftright */
+        padding: 1rem 3rem;
+    }
+
+    main .info{
+        flex-direction: column;
+    }
+
+    .emailForm{
+        display: flex;
+        flex-direction:column;
+    }
+     
+    main .info .info-image {
+        order: -1;
+    }
+
+    main .info .info-image img {
+        max-width: 5px;
+    }
+
+    .footerBeranda{
+        line-height: 1rem;
+    }
+
+    main aside {
+        position:relative;
+
+        max-width:fit-content;
+        line-height: 1rem;
+        text-align: center;
+
+        margin-top: 2rem;
+
+        border-radius: 12px;
+        background-color: #F08A5D;
+        color: #ffffff;
+        box-shadow:2px 2px 9px black;
+       
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promoGo{
+        /* width: 10rem; */
+    }
+
+    main aside .promoGo img{
+        width: 9rem;
+        height: auto;
+    }
+
+    main .highlight .info-description {
+        background-color: #F9ED69;
+        padding: 4rem;
+        border-radius: 0px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #highlightPromo{
+        display: flex;
+        max-width: 479px;
+        /* width: fit-content; */
+    }
+
+    .titlePromo{
+        color: white;
+        font-size: 1rem;
+    }
+
+}
